@@ -68,13 +68,8 @@ class TodoItem extends Component {
 TodoList.propTypes = {
     delTask: PropTypes.func.isRequired,
     doneTask: PropTypes.func.isRequired,
-    tasks: PropTypes.arrayOf(
-        PropTypes.shape({
-            text: PropTypes.string.isRequired,
-            completed: PropTypes.bool.isRequired
-        })
-    ),
-    filterType: PropTypes.oneOf(['SHOW_ALL', 'SHOW_COMPLETE', 'SHOW_ACTIVE']).isRequired
+    tasks:PropTypes.array.isRequired,
+    filterType: PropTypes.string.isRequired
 };
 
 export default TodoList;

@@ -25,12 +25,7 @@ class TodoCount extends Component {
 }
 
 TodoCount.propTypes = {
-    tasks: PropTypes.arrayOf(
-        PropTypes.shape({
-            text: PropTypes.string.isRequired,
-            completed: PropTypes.bool.isRequired
-        })
-    )
+   tasks:PropTypes.array.isRequired
 };
 
 export default TodoCount;
